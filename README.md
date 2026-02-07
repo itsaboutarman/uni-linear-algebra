@@ -1,36 +1,24 @@
-# Numerical Linear Algebra (NLA) Projects
+# Numerical Linear Algebra (NLA) Course Projects
 ### Amirkabir University of Technology (Tehran Polytechnic)
 
-This repository contains a collection of practical projects implemented for the **Numerical Linear Algebra** course under the supervision of **Dr. Mehdi Dehghan**. The projects focus on implementing fundamental linear algebra algorithms, ensuring numerical stability, and exploring real-world applications such as image processing and ranking systems.
-
----
+This repository contains a collection of practical projects implemented for the Numerical Linear Algebra course under the supervision of Dr. Mehdi Dehghan. The projects focus on implementing fundamental linear algebra algorithms, ensuring numerical stability, and exploring real-world applications. Each project is organized into its own directory and includes the source code and implementation details.
 
 ## Projects Overview
 
-### 1. Gram-Schmidt Orthogonalization
-A comparative study between **Classical Gram-Schmidt (CGS)** and **Modified Gram-Schmidt (MGS)** algorithms.
-* **Technical Focus:** Analyzing numerical stability and loss of orthogonality using the Frobenius norm of $||Q^T Q - I||_2$.
-* **Key Finding:** MGS significantly reduces re-orthogonalization errors in floating-point arithmetic compared to CGS.
+### [Project 1: Gram-Schmidt Orthogonalization](./project1.py)
+A comparative study between Classical Gram-Schmidt (CGS) and Modified Gram-Schmidt (MGS) algorithms. It focuses on analyzing numerical stability and loss of orthogonality using the Frobenius norm.
 
-### 2. Tridiagonal System Solvers
-Efficient implementation of solvers for large-scale tridiagonal systems $Ax = b$.
-* **Algorithms:** **Cholesky Decomposition** and the **Thomas Algorithm** (TDMA).
-* **Technical Focus:** Performance benchmarking against `numpy.linalg.solve` for sparse matrices with $N=1000$.
+### [Project 2: Tridiagonal System Solvers](./project2.py)
+Implementation of efficient solvers for large-scale tridiagonal systems. This project includes the Cholesky Decomposition and the Thomas Algorithm (TDMA), with performance benchmarking against standard libraries.
 
-### 3. Iterative Methods for Linear Systems
-Implementation of stationary iterative solvers for high-dimensional systems ($100 \times 100$).
-* **Methods:** **Jacobi**, **Gauss-Seidel**, and **Successive Over-Relaxation (SOR)**.
-* **Technical Focus:** Analyzing convergence rates and identifying the optimal relaxation parameter ($\omega$) for the SOR method.
+### [Project 3: Iterative Methods for Linear Systems](./project3.py)
+Implementation of stationary iterative solvers for high-dimensional systems. It covers Jacobi, Gauss-Seidel, and Successive Over-Relaxation (SOR) methods, including an analysis of convergence rates.
 
-### 4. PageRank Algorithm & Power Method
-Ranking a set of entities (e.g., football teams) based on a transition matrix derived from scoring results.
-* **Technical Focus:** Utilizing the **Power Method** to compute the dominant eigenvector (Perron-Frobenius vector) of a stochastic-like matrix.
+### [Project 4: PageRank Algorithm and Power Method](./project4.py)
+Implementation of the Power Method to compute the dominant eigenvector of a transition matrix, applied to ranking systems (e.g., football team rankings).
 
-### 5. Constrained Least Squares Steganography
-A digital steganography approach where a hidden message is embedded into image pixels.
-* **Technical Focus:** Solving a **Constrained Least Squares** problem to minimize image distortion ($||z||_2$) while ensuring 100% message recovery accuracy.
+### [Project 5: Constrained Least Squares Steganography](./project5/main.py)
+A digital steganography approach where hidden messages are embedded into image pixels. It utilizes Constrained Least Squares to minimize image distortion while ensuring message recovery.
 
-### 6. Handwritten Digit Classification via SVD
-Classification of the **USPS Handwritten Digits** dataset using the concept of "Singular Images."
-* **Technical Focus:** Extracting orthogonal basis vectors for each digit's subspace using **Singular Value Decomposition (SVD)** and classifying test data based on the minimum residual norm.
-
+### [Project 6: Handwritten Digit Classification via SVD](./project6/main.py)
+Classification of the USPS Handwritten Digits dataset using Singular Value Decomposition (SVD). The project extracts orthogonal basis vectors for each digit class and classifies test data based on the minimum residual norm.
